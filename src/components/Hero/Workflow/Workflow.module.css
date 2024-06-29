@@ -1,0 +1,65 @@
+/* components/Workflow.module.css */
+.workflow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f0f8ff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #003366;
+  }
+  
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .step {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .step:hover {
+    transform: translateY(-10px);
+    background: #66b2ff;
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #003366;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #333333;
+  }
+  
+  @media (min-width: 768px) {
+    .steps {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .steps {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
