@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-//import SignupFormDemo from '@/components/Sign-Up/sign-up';
-//import Avatar from 'react-avatar';
+import SignupFormDemo from '@/components/Sign-Up/sign-up';
+import Avatar from 'react-avatar';
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
